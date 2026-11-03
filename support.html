@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fumi — поддержка</title>
+<style>
+  :root { --paper: #F6F6F8; --surface: #FFFFFF; --ink: #18191D; --ink2: #5B5D66; --accent: #4A50C9; --line: #E4E5EA; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #17181B; --surface: #222327; --ink: #ECECEF; --ink2: #A3A5AE; --accent: #9DA3F7; --line: #2C2D33; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  header svg { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .lead { color: var(--ink2); margin: 0 0 24px; }
+  .card { background: var(--surface); border-radius: 14px; padding: 16px 18px; margin: 16px 0; }
+  details { background: var(--surface); border-radius: 14px; padding: 14px 18px; margin: 10px 0; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p, details ol { margin: 10px 0 2px; }
+  ol { padding-left: 22px; }
+  a { color: var(--accent); }
+  nav { margin-top: 40px; font-size: 15px; color: var(--ink2); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#1C1D2E"/><rect x="17" y="15" width="66" height="70" rx="18" fill="#ECECEF"/><circle cx="33" cy="31" r="5.9" fill="#585FD8"/></svg>
+    <h1>Поддержка Fumi</h1>
+  </header>
+  <p class="lead">Fumi — тихий заметочник: заметки и списки, которые можно закрепить на экране блокировки, в Dynamic Island и в виджете.</p>
+
+  <div class="card">
+    Не нашли ответ? Напишите на <a href="mailto:fumisup@gmail.com?subject=Fumi">fumisup@gmail.com</a>. Укажите модель iPhone и версию iOS (Настройки → Основные → Об этом устройстве) и коротко опишите, что происходит. Скриншот или запись экрана очень помогут.
+  </div>
+
+  <h2>Частые вопросы</h2>
+
+  <details>
+    <summary>Как закрепить заметку на экране блокировки?</summary>
+    <p>При создании заметки нажмите «Создать и закрепить». Уже существующую запись можно закрепить, смахнув её вправо в ленте, или через долгое нажатие и «Закрепить». Закреплённые записи стоят в начале ленты и отмечены точкой.</p>
+  </details>
+
+  <details>
+    <summary>Закреплённая заметка пропала с экрана блокировки</summary>
+    <p>Так устроена iOS: карточки на экране блокировки (Live Activity) система сама убирает примерно через 8–12 часов. Заметка при этом остаётся в Fumi, её можно закрепить снова. Если карточка не появляется совсем, проверьте, что для Fumi разрешены Live Activity: Настройки → Fumi → Live Activity.</p>
+  </details>
+
+  <details>
+    <summary>Не получается закрепить ещё одну заметку</summary>
+    <p>iOS ограничивает число карточек одного приложения на экране блокировки. Уберите одну из закреплённых записей: смахните её вправо или подержите и выберите «Убрать закрепление».</p>
+  </details>
+
+  <details>
+    <summary>Как добавить виджет?</summary>
+    <ol>
+      <li>Нажмите и подержите пустое место на домашнем экране, затем «Править» → «Добавить виджет».</li>
+      <li>Найдите Fumi и выберите «Закреплённую заметку» или «Закреплённый список».</li>
+      <li>Чтобы выбрать, какую запись показывать, подержите виджет и нажмите «Изменить виджет».</li>
+    </ol>
+    <p>Пункты списка отмечаются прямо в виджете, приложение открывать не нужно. Виджеты есть и для экрана блокировки.</p>
+  </details>
+
+  <details>
+    <summary>Как закреплять заметку голосом кнопкой действия?</summary>
+    <ol>
+      <li>Откройте приложение «Команды» и создайте новую команду.</li>
+      <li>Добавьте действие «Диктовать текст», затем действие Fumi «Создать и закрепить заметку» и подставьте в поле «Текст» продиктованный текст.</li>
+      <li>Откройте Настройки → Кнопка действия, выберите «Команда» и укажите созданную команду.</li>
+    </ol>
+    <p>Теперь можно нажать кнопку, продиктовать мысль, и она сразу окажется на экране блокировки. Кнопка действия есть на iPhone 15 Pro и новее. На других моделях ту же команду можно запускать из виджета «Команды» или из Пункта управления.</p>
+  </details>
+
+  <details>
+    <summary>Где хранятся мои заметки и можно ли их перенести?</summary>
+    <p>Только на вашем iPhone. Fumi не использует аккаунты и не подключается к интернету. Заметки попадают в обычную резервную копию iPhone (iCloud или компьютер) и восстанавливаются вместе с ней, например при переезде на новый телефон.</p>
+  </details>
+
+  <details>
+    <summary>Как удалить запись?</summary>
+    <p>Смахните запись влево в ленте и нажмите «Удалить», или подержите её и выберите «Удалить». Корзины нет, поэтому удаление всегда требует двух действий.</p>
+  </details>
+
+  <nav><a href="privacy.html">Политика конфиденциальности</a></nav>
+</main>
+</body>
+</html>
