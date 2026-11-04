@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fumi — Support</title>
+<style>
+  :root { --paper: #F6F6F8; --surface: #FFFFFF; --ink: #18191D; --ink2: #5B5D66; --accent: #4A50C9; --line: #E4E5EA; }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #17181B; --surface: #222327; --ink: #ECECEF; --ink2: #A3A5AE; --accent: #9DA3F7; --line: #2C2D33; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  header svg { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .lead { color: var(--ink2); margin: 0 0 24px; }
+  .card { background: var(--surface); border-radius: 14px; padding: 16px 18px; margin: 16px 0; }
+  details { background: var(--surface); border-radius: 14px; padding: 14px 18px; margin: 10px 0; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p, details ol { margin: 10px 0 2px; }
+  ol { padding-left: 22px; }
+  a { color: var(--accent); }
+  nav { margin-top: 40px; font-size: 15px; color: var(--ink2); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#1C1D2E"/><rect x="17" y="15" width="66" height="70" rx="18" fill="#ECECEF"/><circle cx="33" cy="31" r="5.9" fill="#585FD8"/></svg>
+    <h1>Fumi Support</h1>
+  </header>
+  <p class="lead">Fumi is a quiet notes app: notes and lists you can pin to the Lock Screen, the Dynamic Island and a widget.</p>
+
+  <div class="card">
+    Didn’t find an answer? Write to <a href="mailto:fumisup@gmail.com?subject=Fumi">fumisup@gmail.com</a>. Please include your iPhone model and iOS version (Settings → General → About) and briefly describe what’s happening. A screenshot or screen recording helps a lot.
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>How do I pin a note to the Lock Screen?</summary>
+    <p>When you create a note, tap “Create and Pin”. To pin an existing entry, swipe it right in the feed, or touch and hold it and choose “Pin”. Pinned entries stay at the top of the feed and are marked with a dot.</p>
+  </details>
+
+  <details>
+    <summary>My pinned note disappeared from the Lock Screen</summary>
+    <p>That’s how iOS works: the system removes Lock Screen cards (Live Activities) on its own after about 8–12 hours. The note itself stays in Fumi, and you can pin it again. If the card doesn’t appear at all, make sure Live Activities are allowed for Fumi: Settings → Fumi → Live Activities.</p>
+  </details>
+
+  <details>
+    <summary>I can’t pin another note</summary>
+    <p>iOS limits how many cards one app can show on the Lock Screen. Unpin one of your pinned entries: swipe it right, or touch and hold it and choose “Unpin”.</p>
+  </details>
+
+  <details>
+    <summary>How do I add a widget?</summary>
+    <ol>
+      <li>Touch and hold an empty area of the Home Screen, then tap “Edit” → “Add Widget”.</li>
+      <li>Find Fumi and choose “Pinned Note” or “Pinned List”.</li>
+      <li>To choose which entry the widget shows, touch and hold the widget and tap “Edit Widget”.</li>
+    </ol>
+    <p>You can check off list items right in the widget without opening the app. There are Lock Screen widgets too.</p>
+  </details>
+
+  <details>
+    <summary>How do I pin a note by voice with the Action button?</summary>
+    <ol>
+      <li>Open the Shortcuts app and create a new shortcut.</li>
+      <li>Add the “Dictate Text” action, then the Fumi action “Create and Pin Note”, and put the dictated text into its “Text” field.</li>
+      <li>Open Settings → Action Button, choose “Shortcut” and pick the shortcut you created.</li>
+    </ol>
+    <p>Now you can press the button, say what you need, and it lands on your Lock Screen right away. The Action button is available on iPhone 15 Pro and later. On other models you can run the same shortcut from the Shortcuts widget or from Control Center.</p>
+  </details>
+
+  <details>
+    <summary>Where are my notes stored, and can I move them?</summary>
+    <p>Only on your iPhone. Fumi has no accounts and never connects to the internet. Your notes are included in your regular iPhone backup (iCloud or computer) and are restored with it, for example when you move to a new phone.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete an entry?</summary>
+    <p>Swipe the entry left in the feed and tap “Delete”, or touch and hold it and choose “Delete”. There’s no trash, so deleting always takes two steps. To delete several entries at once, touch and hold any of them, tap “Select”, check the ones you want and tap “Delete” at the bottom of the screen.</p>
+  </details>
+
+  <nav><a href="privacy.html">Privacy Policy</a> · <a href="../support.html" lang="ru">Русский</a></nav>
+</main>
+</body>
+</html>
